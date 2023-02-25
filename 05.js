@@ -15,6 +15,12 @@ function agregaPropiedad(amigos, propiedad) {
   // var amigos = [{ nombre: 'toni' } , { nombre: 'Emi', edad: 25 }];
   // agregaPropiedad(amigos, 'edad') debe devolver [{ nombre: 'toni', edad: null } , { nombre: 'Emi', edad: 25 }]
 
+  for (var i = 0; i < amigos.length; i++) {
+    if (!amigos[i].hasOwnProperty(propiedad)) {
+      amigos[i][propiedad] = null;
+    }
+  }
+  return amigos;
 }
 
 // No modifiques nada debajo de esta linea //

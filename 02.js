@@ -13,6 +13,13 @@ function mismaCantidadCaracteres(strings, caracteres) {
   // mismaCantidadCaracteres(['javascript', 'pedro', 'amigo', 'parque'], 5) debe retornar ['pedro', 'amigo']
 
   // Tu código aca:
+var resultado = [];
+  for (var i = 0; i < strings.length; i++) {
+    if (strings[i].length === caracteres) {
+      resultado.push(strings[i]);
+    }
+  }
+return resultado;
 
 }
 
